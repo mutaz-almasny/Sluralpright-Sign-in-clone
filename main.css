@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: 'roboto' , sans-serif;
+    font-weight: 300;
+    background-color: #181818;
+    color: white;
+    font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 300;
+}
+
+::placeholder{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
+ul{
+    list-style: none;
+}
+
+.p-button{
+    display: block;
+    width: 120% ;
+    background-color: orangered;
+    color: white;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.p-button:hover{
+    background-color: #b83d0f;
+}
+
+.s-button{
+    background-color: none;
+    color: white;
+    width: 300px;
+    margin-top: 8px;
+    height: 30px;
+    background: none;
+    border-radius: 2px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.s-button:hover{
+    border-color: #b83d0f;
+    color: #b83d0f;
+}
+
+/* LEft */
+.container{
+    display: flex;
+}
+
+#left{
+    flex: 1;
+}
+
+#right{
+    flex: 1.8;
+}
+
+.container #left{
+    width: 40%;
+    height: 100vb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container #left img{
+    margin-bottom: 50px;
+    width: 250px;
+}
+
+.container #left form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container #left form input{
+    width: 120%;
+    margin-bottom: 1rem ;
+    height: 30px;
+    background-color: #181818;
+    border-radius: 2px;
+    border: 1px solid #555;
+}
+
+.container #left form label{
+    line-height: 2rem;
+}
+
+
+.help{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-weight: 200;
+    font-size: 13px;
+}
+
+.help a:hover {
+    color: #b83d0f;
+}
+
+.help a {
+    padding: 5px 0;
+    color: white;
+    font-weight: bold;
+}
+
+.or{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.or,
+.help,
+.s-button,
+.main-footer{
+    margin-left: 50px;
+}
+
+.or span {
+    margin: 0 10px;
+}
+
+.or hr {
+    width: 17vh;
+}
+
+.main-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.main-footer div {
+    padding-top: 10px;
+}
+
+.main-footer a{
+    color: orangered;
+}
+
+
+/* Right */
+
+.container #right{
+    width: 100%;
+    background: url('https://image.ibb.co/cO9Lxq/login-bg.jpg') no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.container #right .showcase h1{
+    padding-left: 20px;
+    font-size: px;
+    font-weight: 600;
+}
+
+@media(max-width: 700px) {
+
+    .container{
+        flex-direction: column;
+    }
+
+    #left{
+        margin: auto;
+    }
+
+    .logo{
+        margin-top: 50px;
+    }
+
+
+    .container #right{
+        padding-top: 84px;
+    }
+
+    #right .showcase{
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 500px){
+    #left .help a{
+        text-align: center;
+    }
+
+    .main-footer{
+        text-align: center;
+    }
+    .main-footer div{
+        padding:10px 24px;
+    }
+
+    .main-footer{
+        margin-top: 45px;
+    }
+}
+
+
+
